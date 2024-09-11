@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Credit Card Checkout Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="checkout-container">
+    <h2 class="checkout-header">🔒 Credit Card Checkout</h2>
+
+    <form class="checkout-form">
+        <!-- Cardholder Name -->
+        <div class="form-group">
+            <label for="cardholder-name">Cardholder Name</label>
+            <input type="text" id="cardholder-name" placeholder="Tom " required />
+        </div>
+
+        <!-- Card Number -->
+        <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9101 1121" required />
+        </div>
+
+        <!-- Expiration Date and CVC -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY" required />
+            </div>
+
+            <div class="form-group">
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc" placeholder="123" required />
+            </div>
+        </div>
+
+        <!-- Billing Address -->
+        <h3>Billing Address</h3>
+        <div class="form-group">
+            <label for="address-line1">Address Line 1</label>
+            <input type="text" id="address-line1" placeholder="123 Main St" required />
+        </div>
+
+        <div class="form-group">
+            <label for="address-line2">Address Line 2 (Optional)</label>
+            <input type="text" id="address-line2" placeholder="Apt, Suite, etc." />
+        </div>
+
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="New York" required />
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" placeholder="NY" required />
+            </div>
+
+            <div class="form-group">
+                <label for="zip">ZIP Code</label>
+                <input type="text" id="zip" placeholder="10001" required />
+            </div>
+        </div>
+
+        <!-- Country -->
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="UK">India</option>
+                <option value="UK">Sweet Zerland</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="UK">United Kingdom</option>
+                <option value="UK">Nepal</option>
+
+                <!-- Add more countries as needed -->
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-button">Complete Purchase</button>
+    </form>
+</div>
+
+</body>
+</html>
